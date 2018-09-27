@@ -2,10 +2,9 @@ const express = require('express');
 const path = require('path');
 const { report: { foods } } = require('./food_data.json');
 
-
 const app = express();
 
-app.use(express.static(path.resolve(__dirname, 'public')));
+app.use(express.static(path.resolve(__dirname, '../public')));
 
 // Determine if food meets all criteria
 const isValidFood = (food, spec) => {
@@ -17,7 +16,7 @@ const isValidFood = (food, spec) => {
     if (spec[nutrient_id]) {
       const [min, max] = spec[nutrient_id].split('-').map(str => +str);
       // if gm is out of range of given specs
-      if (min > gm || gm > max) {
+      if ((gm < min && min !== 0) || (gm > max && max !== 0)) {
         // remove food from list
         return false;
       }
