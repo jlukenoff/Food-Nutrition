@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import QueryForm from './QueryForm/QueryForm';
 import ResultsList from './ResultsList/ResultsList';
-
-// import PropTypes from 'prop-types';
+import 'normalize.css';
 
 import styles from './App.css';
 
@@ -43,7 +42,6 @@ class App extends Component {
       fatMin,
       fatMax,
     } = this.state;
-    console.log('e:', e);
     fetch(`/food?203=${proteinMin}-${proteinMax}&204=${sugarMin}-${sugarMax}&205=${carbMin}-${carbMax}&269=${fatMin}-${fatMax}`)
       .then(chunk => chunk.json())
       .then(results => this.setState({ results }))
@@ -54,15 +52,11 @@ class App extends Component {
     return (
       <div className={styles.container}>
         <span className={styles.title}>Welcome to Food Finder</span>
-        <hr />
         <QueryForm {...this.state} handleSubmit={this.handleSubmit} handleInput={this.updateSpecData} />
         <ResultsList {...this.state} />
       </div>
     );
   }
 }
-
-// App.propTypes = {
-// };
 
 export default App;

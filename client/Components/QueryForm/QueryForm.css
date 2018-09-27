@@ -1,0 +1,28 @@
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 5vmin;
+}
+
+.inputFieldContainer {
+  border: 1px solid black;
+  padding: 2vmin;
+}
+
+.submitBtn {
+  width: 20vmin;
+  height: 4vmin;
+  font-size: 2vmin;
+  margin-top: 3vmin;
+}
+
+.submitBtn:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.inputField {
+  max-width: 45px;
+  font-size: 2vmin;
+}
