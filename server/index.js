@@ -1,9 +1,6 @@
 const express = require('express');
 const path = require('path');
-
-const DATA_DIR = path.join(__dirname, 'food_data.json');
-
-const { report: { foods } } = require(DATA_DIR);
+const { report: { foods } } = require('./food_data.json');
 
 
 const app = express();
