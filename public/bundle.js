@@ -657,7 +657,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".QueryForm__inputContainer___32W-8 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n  margin: 0 5vmin;\n}\n\n.QueryForm__inputFieldContainer___L7NlC {\n  border: 1px solid black;\n  padding: 2vmin;\n}\n\n.QueryForm__submitBtn___3WR-S {\n  width: 20vmin;\n  height: 4vmin;\n  font-size: 2vmin;\n  margin-top: 3vmin;\n}\n\n.QueryForm__submitBtn___3WR-S:hover {\n  background-color: lightgray;\n  cursor: pointer;\n}\n\n.QueryForm__inputField___prTOj {\n  max-width: 45px;\n  font-size: 2vmin;\n}", ""]);
+exports.push([module.i, ".QueryForm__inputContainer___32W-8 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n  margin: 0 15%;\n}\n\n.QueryForm__inputFieldContainer___L7NlC {\n  border: 1px solid black;\n  padding: 2vmin;\n}\n\n.QueryForm__submitBtn___3WR-S {\n  width: 20vmin;\n  height: 4vmin;\n  font-size: 2vmin;\n  margin-top: 3vmin;\n}\n\n.QueryForm__submitBtn___3WR-S:hover {\n  background-color: lightgray;\n  cursor: pointer;\n}\n\n.QueryForm__inputField___prTOj {\n  max-width: 45px;\n  font-size: 2vmin;\n}", ""]);
 
 // exports
 exports.locals = {
