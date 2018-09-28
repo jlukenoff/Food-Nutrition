@@ -18,7 +18,7 @@ class App extends Component {
       fatMin: 0,
       fatMax: 0,
       results: [],
-      currentResultIndex: 0,
+      currentPageStartIndex: 0,
       ...props,
     };
     this.updateSpecData = this.updateSpecData.bind(this);
@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   handlePageChange({ selected }) {
-    this.setState({ currentResultIndex: selected * 5 });
+    this.setState({ currentPageStartIndex: selected * 10 });
   }
 
   handleSubmit(e) {
