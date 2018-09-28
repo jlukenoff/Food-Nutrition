@@ -21,6 +21,12 @@ body {
   background-size: cover;
 }
 
+.credit {
+  position: fixed;
+  top: 1%;
+  right: 2%;
+  font-weight: 300;
+}
 
 .title {
   font-size: 6vmin;

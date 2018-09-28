@@ -18,16 +18,22 @@ class App extends Component {
       fatMin: 0,
       fatMax: 0,
       results: [],
+      currentPageStartIndex: 0,
       ...props,
     };
     this.updateSpecData = this.updateSpecData.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handlePageChange = this.handlePageChange.bind(this);
   }
 
   updateSpecData(which, val) {
     const newState = {};
     newState[which] = val;
     this.setState({ ...newState });
+  }
+
+  handlePageChange({ selected }) {
+    this.setState({ currentPageStartIndex: selected * 10 });
   }
 
   handleSubmit(e) {
@@ -51,9 +57,10 @@ class App extends Component {
   render() {
     return (
       <div className={styles.container}>
+        <span className={styles.credit}><em>Built for Thryve</em></span>
         <span className={styles.title}>Welcome to Food Finder</span>
         <QueryForm {...this.state} handleSubmit={this.handleSubmit} handleInput={this.updateSpecData} />
-        <ResultsList {...this.state} />
+        <ResultsList {...this.state} handlePageChange={this.handlePageChange} />
       </div>
     );
   }

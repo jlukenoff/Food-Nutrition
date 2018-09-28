@@ -1,0 +1,31 @@
+.container {
+  margin-top: 4vmin;
+}
+.resultsList {
+  list-style: none;
+  padding: 0;
+}
+
+.resultsListEntry {
+  margin-bottom: 2vmin;
+  font-weight: 400;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 15%;
+  cursor: pointer;
+}
+
+.pages {
+  width: 4vmin;
+  height: 4vmin;
+  padding-top: 1vmin;
+}
+
+.activePage {
+  border: 1px solid black;
+  border-radius: 50%;
+}
