@@ -32,4 +32,10 @@ app.get('/food', (req, res) => {
 
 const port = process.env.PORT || 3000;
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
+const server = app.listen(port, () => console.log(`Server running on port ${port}`));
+
+if (process.env.NODE_ENV === 'test') {
+  server.close();
+}
+
+module.exports = { server, app };

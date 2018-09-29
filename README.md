@@ -11,3 +11,9 @@ npm start
 ```
 - Application is now running on localhost:3003
 - Or simply visit https://fierce-garden-72214.herokuapp.com/
+
+## Testing Instructions
+- From root directory run
+```
+npm test
+```

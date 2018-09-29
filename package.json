@@ -4,11 +4,24 @@
   "description": "Food Nutriton API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server/index.js",
     "start-dev": "nodemon --inspect server/index.js",
     "react-dev": "webpack --watch",
     "build": "webpack --mode=production"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/server/*.{js,jsx}"
+    ],
+    "coverageDirectory": "<rootDir>/__test__/coverage/",
+    "resolver": null,
+    "testMatch": [
+      "**/__test__/*.js",
+      "<rootDir>/server/*.test.{js,jsx}"
+    ]
   },
   "repository": {
     "type": "git",
@@ -39,7 +52,9 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^1.0.0",
+    "jest": "^23.6.0",
     "style-loader": "^0.23.0",
+    "supertest": "^3.3.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1"
   }
