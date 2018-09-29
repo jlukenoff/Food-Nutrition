@@ -3,7 +3,7 @@ const { server } = require('../server/index.js');
 const { report: { foods } } = require('../server/food_data.json');
 
 describe('GET /food', () => {
-  test('should fetch all records with no params', (done) => {
+  test('should fetch all records when given no params', (done) => {
     request(server)
       .get('/food')
       .then((response) => {
