@@ -2,7 +2,7 @@
 node_modules
 
 # bundles
-bundle.**
+# bundle.**
 
 # test coverage data
 coverage

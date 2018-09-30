@@ -1,13 +1,20 @@
 language: node_js
 node_js:
-  - "node"
-  - "7"
+- 'node'
+- '7'
 cache:
   directories:
-    - "node_modules"
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: 2aNqJkcn1sn1RfHs26mg0ctFR53avz4YHwjiGKqsg5GqM6VF4wzbZCCnHqHCZh9by0/+BtVd7wwmZD5xWjIQZ1kfka8H3k5vSA0iiH9+Fyb41RXCF6G/rBjYYWQv1XiI2JxzsMx9KAJ9DyKrCMz3AkurjrTrKPAcirTwqqi25lfAw24zGjb6N+mL3X1kPsxd6D6u+sON38LI3PqM/JHhFb8M4XKR4YzUoHX6rDD5JBqMqUkGo/a8xiC9FtMVVMYWHg4AkeF2cW45iGJBPdZ56sC6vmw2Y63PWLvLDeUA+Apmv1a+HVy9J8s4nO9H4i9gAB6qlinfhyp/RiqfZBRixUDk8SY75QT+D5aUPbYP+2ClkruLtZuuGHNQeRX3Ry6tqB08hBxmnjUxgNWDHT7hGP8RlXf1aQ+NBsIvp5uE0k7A3abtY9MNrRU92BYnjyMdCIMWzdPB8aJivCYkb+ZjfE3X/E/LzyfFS8RhFnpPUKuoH3FYkuvooKU+0jQZa9uqGvcnMJjH8ZHsXHiMykVRfp/xdlhb+AJJ6AlLR5i2NZyNFMeq8aViduXTD+2yT8A19uI+gc+Jri0+I15uVVmqCm2b2Lv1DmL6a6yQpgQ5q6mFf/DjcEixXEkDPowvAB84Nk9TPxDMT9SBo8oFttTKipY1nZ6tydh4tN4CHI9QCPg=
+  on: production
+  run: npm run build
 before_install:
-  - npm i -g npm@6.2.0
+- npm i -g npm@6.2.0
 install:
-  - npm install
+- npm install
 script:
-  - npm test
+- npm test
+
