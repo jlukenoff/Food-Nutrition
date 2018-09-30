@@ -38,4 +38,4 @@ if (process.env.NODE_ENV === 'test') {
   server.close();
 }
 
-module.exports = { server, app };
+module.exports = { server };

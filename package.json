@@ -19,8 +19,7 @@
     "coverageDirectory": "<rootDir>/__test__/coverage/",
     "resolver": null,
     "testMatch": [
-      "**/__test__/*.js",
-      "<rootDir>/server/*.test.{js,jsx}"
+      "**/__test__/*.js"
     ]
   },
   "repository": {
