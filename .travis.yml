@@ -3,6 +3,10 @@ node_js:
   - "node"
   - "iojs"
   - "7"
+deploy:
+  provider: heroku
+  api_key:
+    secure: "YOUR ENCRYPTED API KEY"
 cache:
   directories:
     - "node_modules"
