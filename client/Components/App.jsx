@@ -57,7 +57,7 @@ class App extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <span className={styles.credit}><em>Built for Thryve [CD success]</em></span>
+        <span className={styles.credit}><em>Built for Thryve</em></span>
         <span className={styles.title}>Welcome to Food Finder</span>
         <QueryForm {...this.state} handleSubmit={this.handleSubmit} handleInput={this.updateSpecData} />
         <ResultsList {...this.state} handlePageChange={this.handlePageChange} />
