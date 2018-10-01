@@ -27,7 +27,7 @@ const isValidFood = (food, spec) => {
 
 app.get('/food', (req, res) => {
   const results = foods.filter(foodObj => isValidFood(foodObj, req.query));
-  res.end(JSON.stringify(results));
+  res.send(results);
 });
 
 const port = process.env.PORT || 3000;
