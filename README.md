@@ -1,4 +1,4 @@
-# Food-Nutrition
+# Food-Nutrition [![Build Status](https://travis-ci.org/jlukenoff/Food-Nutrition.svg?branch=production)](https://travis-ci.org/jlukenoff/Food-Nutrition)
 Allows users to find foods based on nutritional content
 
 ## Usage Instructions
